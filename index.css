@@ -1,9 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap') 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+img {
+    max-width: 100%;
+}
 
-.attribution { font-size: 11px; text-align: center; }
+body {
+    font-family: "Public Sans", sans-serif;
+    /* font-size: 16px; */
+    /*   background-color: hsl(0,0%,98%) */
 
-.attribution a { color: hsl(228, 45%, 44%); }
+}
+
+h2 {
+    @apply txt-slate-800 text-2xl mb-6;
+}
+
+h3 {
+    @apply txt-slate-800 text-xl lg:text-2xl mb-6;
+}
+
+p {
+    @apply text-slate-900 opacity-75 text-sm leading-relaxed mb-8 lg:text-base;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
